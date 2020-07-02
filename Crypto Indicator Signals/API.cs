@@ -10,14 +10,14 @@ namespace Crypto_Indicator_Signals
     {
         public int state { get; set; }
         #region HTTP GLOBAL ERRORS
-        string HTTP_403 = "WAF Limit (Web Application Firewall) has been violated";
-        string HTTP_429 = "Breaking a request rate limit";
-        string HTTP_418 = "IP Address has been banned";
-        string HTTP_4XX = "";
-        string HHTP_5XX = ""; 
+        const string HTTP_403 = "WAF Limit (Web Application Firewall) has been violated";
+        const string HTTP_429 = "Breaking a request rate limit";
+        const string HTTP_418 = "IP Address has been banned";
+        const string HTTP_4XX = "";
+        readonly string HHTP_5XX = "";
         #endregion
 
-        string BASE_URL = "https://api.binance.com"; 
+        readonly string BASE_URL = "https://api.binance.com"; 
         public API()
         {
 
