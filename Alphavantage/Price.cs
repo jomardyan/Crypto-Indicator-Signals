@@ -16,7 +16,7 @@ namespace Alphavantage
         /// </summary>
         /// <param name="FromCurrency">The currency you would like to get the exchange rate for. It can either be a physical currency or digital/crypto currency. For example: from_currency=USD or from_currency=BTC. </param>
         /// <param name="ToCurrency">The destination currency for the exchange rate. It can either be a physical currency or digital/crypto currency. For example: to_currency=USD or to_currency=BTC.</param>
-        public static async Task<double> GetPriceAsync(string FromCurrency, string ToCurrency)
+        public static async Task<string> GetPriceAsync(string FromCurrency, string ToCurrency)
         {
             string API_KEY = "60GJ3J79HQJLF9HC";
             StringBuilder urlBuilder = new StringBuilder($"https://www.alphavantage.co/");
@@ -24,12 +24,13 @@ namespace Alphavantage
 
 
             HttpClient client = new HttpClient();
+            System.TimeSpan timeSpan = new TimeSpan(0,0, 60);
+            client.Timeout = timeSpan; 
             var response = await client.GetStringAsync(urlBuilder.ToString());
-            var machine = JsonConvert.DeserializeObject<AlphaVentagePRICEData>(response);
-            var _PRICE = machine.RealtimeCurrencyExchangeRate.The5ExchangeRate;
-          
-            
-            return _PRICE;
+            var data = JsonConvert.DeserializeObject<AlphaVentagePRICEData>(response);
+            var _PRICE = data.RealtimeCurrencyExchangeRate.The5ExchangeRate;
+            client.Dispose();
+            return _PRICE.ToString();
         }
     }
 }

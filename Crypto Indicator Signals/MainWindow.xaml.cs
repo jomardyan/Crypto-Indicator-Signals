@@ -1,17 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using Alphavantage;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
-using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace Crypto_Indicator_Signals
 {
@@ -24,8 +12,18 @@ namespace Crypto_Indicator_Signals
         {
             InitializeComponent();
             //BTC_RSI.Background = Brushes.Black;
-            
+        }
 
+        private async void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            BTC_PRICE_VALUE.Text = await Price.GetPriceAsync("BTC", "USD");
+            ETH_PRICE_VALUE.Text = await Price.GetPriceAsync("ETH", "USD");
+            LTC_PRICE_VALUE.Text = await Price.GetPriceAsync("LTC", "USD");
+            XRP_PRICE_VALUE.Text = await Price.GetPriceAsync("XRP", "USD");
+            LINK_PRICE_VALUE.Text = await Price.GetPriceAsync("LINK", "USD");
+            BCH_PRICE_VALUE.Text = await Price.GetPriceAsync("BCH", "USD");
+
+            //BTC_RSI_VALUE.Text = await RSI.GetRsiAsync("BTCUSD", "60min", "60");
         }
     }
 }

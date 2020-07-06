@@ -13,7 +13,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Crypto_Indicator_Signals"
         mc:Ignorable="d"
-        Title="MainWindow" Height="842" Width="1439">
+        Title="MainWindow" Height="842" Width="1439" Loaded="Window_Loaded">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="190*" />
@@ -60,8 +60,8 @@
             </materialDesign:Card>
         </StackPanel>
         <StackPanel  Grid.Column="0" Grid.Row="5" Orientation="Vertical">
-            <materialDesign:Card x:Name="BAT_SYMBOL" materialDesign:ShadowAssist.ShadowDepth="Depth2"  FontSize="48" Padding="40" Margin="5" Height="125">
-                BAT
+            <materialDesign:Card x:Name="LINK_SYMBOL" materialDesign:ShadowAssist.ShadowDepth="Depth2"  FontSize="48" Padding="40" Margin="5" Height="125">
+                LINK
             </materialDesign:Card>
         </StackPanel>
         <!--#endregion-->
@@ -77,7 +77,7 @@
                 </Grid>
             </materialDesign:Card>
         </StackPanel>
-        
+
         <StackPanel Grid.Column="2" Grid.Row="0" Orientation="Vertical">
             <materialDesign:Card x:Name="BTC_RSI" Background="#FF051B72" Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Padding="0" Height="125" Margin="5">
                 <Grid>
@@ -90,7 +90,7 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="BTC_RSI_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="BTC_RSI_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -109,7 +109,7 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="BTC_MACD_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="BTC_MACD_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -128,7 +128,7 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="BTC_ADX_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="BTC_ADX_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -180,7 +180,7 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="ETH_RSI_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="ETH_RSI_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -199,7 +199,7 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="ETH_MACD_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="ETH_MACD_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -218,7 +218,7 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="ETH_ADX_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="ETH_ADX_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -270,7 +270,7 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="LTC_RSI_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="LTC_RSI_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -289,7 +289,7 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="LTC_MACD_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="LTC_MACD_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -308,7 +308,7 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="LTC_ADX_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="LTC_ADX_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -360,7 +360,7 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="XRP_RSI_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="XRP_RSI_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -379,7 +379,7 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="XRP_MACD_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="XRP_MACD_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -398,7 +398,7 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="XRP_ADX_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="XRP_ADX_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -450,7 +450,7 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="BCH_RSI_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="BCH_RSI_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -469,7 +469,7 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="BCH_MACD_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="BCH_MACD_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -488,7 +488,7 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="BCH_ADX_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="BCH_ADX_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -515,13 +515,13 @@
             </materialDesign:Card>
         </StackPanel>
         <!--#endregion-->
-        <!--#Region BAT_Region -->
+        <!--#Region LINK_Region -->
         <StackPanel Grid.Column="1" Grid.Row="5" Orientation="Vertical">
-            <materialDesign:Card x:Name="BAT_PRICE" Background="#FF051B72" Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Padding="0" Height="125" Margin="5">
+            <materialDesign:Card x:Name="LINK_PRICE" Background="#FF051B72" Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Padding="0" Height="125" Margin="5">
                 <Grid>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="left">
                         <materialDesign:PackIcon Margin="0,0,0,2"  VerticalAlignment="Center" Height="30" Width="30" Kind="CurrencyUsd" Padding="0,3,0,0" />
-                        <TextBlock x:Name="BAT_PRICE_VALUE" Margin="2,15,5,15" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0000.00</TextBlock>
+                        <TextBlock x:Name="LINK_PRICE_VALUE" Margin="2,15,5,15" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0000.00</TextBlock>
                         <materialDesign:PackIcon Margin="12,0,0,2"  VerticalAlignment="Center" Height="30" Width="30" Kind="ArrowUpBoldCircleOutline" />
                     </StackPanel>
                 </Grid>
@@ -529,18 +529,19 @@
         </StackPanel>
 
         <StackPanel Grid.Column="2" Grid.Row="5" Orientation="Vertical">
-            <materialDesign:Card x:Name="BAT_RSI" Background="#FF051B72" Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Padding="0" Height="125" Margin="5">
+            <materialDesign:Card x:Name="LINK_RSI" Background="#FF051B72" Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Padding="0" Height="125" Margin="5">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
-                    <TextBlock Grid.Row="0" Margin="16 16 16 4" Style="{StaticResource MaterialDesignHeadline5TextBlock}"><Run Text="RSI BAT " /><InlineUIContainer>
+                    <TextBlock Grid.Row="0" Margin="16 16 16 4" Style="{StaticResource MaterialDesignHeadline5TextBlock}"><Run Text="RSI LINK " /><InlineUIContainer>
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="BAT_RSI_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="LINK_RSI_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00
+                    </TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -548,18 +549,18 @@
             </materialDesign:Card>
         </StackPanel>
         <StackPanel Grid.Column="3" Grid.Row="5" Orientation="Vertical">
-            <materialDesign:Card x:Name="BAT_MACD" Background="#FF051B72" Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Padding="0" Height="125" Margin="5">
+            <materialDesign:Card x:Name="LINK_MACD" Background="#FF051B72" Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Padding="0" Height="125" Margin="5">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
-                    <TextBlock Grid.Row="0" Margin="16 16 16 4" Style="{StaticResource MaterialDesignHeadline5TextBlock}"><Run Text="MACD BAT " /><InlineUIContainer>
+                    <TextBlock Grid.Row="0" Margin="16 16 16 4" Style="{StaticResource MaterialDesignHeadline5TextBlock}"><Run Text="MACD LINK " /><InlineUIContainer>
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="BAT_MACD_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="LINK_MACD_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -567,18 +568,18 @@
             </materialDesign:Card>
         </StackPanel>
         <StackPanel Grid.Column="4" Grid.Row="5" Orientation="Vertical">
-            <materialDesign:Card x:Name="BAT_ADC" Background="#FF051B72" Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Padding="0" Height="125" Margin="5">
+            <materialDesign:Card x:Name="LINK_ADC" Background="#FF051B72" Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Padding="0" Height="125" Margin="5">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
                         <RowDefinition Height="Auto" />
                     </Grid.RowDefinitions>
-                    <TextBlock Grid.Row="0" Margin="16 16 16 4" Style="{StaticResource MaterialDesignHeadline5TextBlock}"><Run Text="ADX BAT  " /><InlineUIContainer>
+                    <TextBlock Grid.Row="0" Margin="16 16 16 4" Style="{StaticResource MaterialDesignHeadline5TextBlock}"><Run Text="ADX LINK  " /><InlineUIContainer>
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <TextBlock x:Name="BAT_ADX_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">48.2</TextBlock>
+                    <TextBlock x:Name="LINK_ADX_VALUE" Grid.Row="2" Margin="16 0 16 8" VerticalAlignment="Center" HorizontalAlignment="Left" Style="{StaticResource MaterialDesignHeadline4TextBlock}">0.00</TextBlock>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85">
                         <Button Style="{StaticResource MaterialDesignFloatingActionMiniButton}" Background="#FF051B72" BorderBrush="#81d4fa" materialDesign:ButtonProgressAssist.IsIndicatorVisible="True" materialDesign:ButtonProgressAssist.Value="25" materialDesign:ButtonProgressAssist.IndicatorForeground="#FFEE2261" materialDesign:ButtonProgressAssist.IndicatorBackground="#FF8CFF08"   Content="{materialDesign:PackIcon UnfoldMoreHorizontal}" />
                     </StackPanel>
@@ -586,7 +587,7 @@
             </materialDesign:Card>
         </StackPanel>
         <StackPanel Grid.Column="5" Grid.Row="5" Orientation="Vertical">
-            <materialDesign:Card x:Name="BAT_SCORE" Background="#FF051B72" Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Padding="0" Height="125" Margin="5">
+            <materialDesign:Card x:Name="LINK_SCORE" Background="#FF051B72" Foreground="{DynamicResource PrimaryHueDarkForegroundBrush}" Padding="0" Height="125" Margin="5">
                 <Grid>
                     <Grid.RowDefinitions>
                         <RowDefinition Height="Auto" />
@@ -597,16 +598,13 @@
                             <materialDesign:PackIcon  Kind="ChartTimelineVariant" Height="25" Width="25" />
                         </InlineUIContainer></TextBlock>
                     <Separator Grid.Row="1" Style="{StaticResource MaterialDesignLightSeparator}" />
-                    <materialDesign:Badged x:Name="BAT_SCORE_VALUE" Grid.Row="2" Badge="Score" BadgeColorZoneMode="Dark">
-                        <Button x:Name="BAT_SCORE_STATUS"  Margin="10" Width="105">Status</Button>
+                    <materialDesign:Badged x:Name="LINK_SCORE_VALUE" Grid.Row="2" Badge="Score" BadgeColorZoneMode="Dark">
+                        <Button x:Name="LINK_SCORE_STATUS"  Margin="10" Width="105">Status</Button>
                     </materialDesign:Badged>
                     <StackPanel Grid.Row="2" Orientation="Horizontal" Margin="0,0,16,8" HorizontalAlignment="Right" Width="85" />
                 </Grid>
             </materialDesign:Card>
         </StackPanel>
         <!--#endregion-->
-
-
-
     </Grid>
 </Window>

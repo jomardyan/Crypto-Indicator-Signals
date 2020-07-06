@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataTest", "DataTest\DataTe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Alphavantage", "Alphavantage\Alphavantage.csproj", "{D735B5B0-8061-4522-9EC0-48DFFD175B56}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoinBaseWorkerService", "CoinBaseWorkerService\CoinBaseWorkerService.csproj", "{2D607408-D3E2-4C56-B61B-4DFA993D06D0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{D735B5B0-8061-4522-9EC0-48DFFD175B56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D735B5B0-8061-4522-9EC0-48DFFD175B56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D735B5B0-8061-4522-9EC0-48DFFD175B56}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D607408-D3E2-4C56-B61B-4DFA993D06D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D607408-D3E2-4C56-B61B-4DFA993D06D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D607408-D3E2-4C56-B61B-4DFA993D06D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D607408-D3E2-4C56-B61B-4DFA993D06D0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

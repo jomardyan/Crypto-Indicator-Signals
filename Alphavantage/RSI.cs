@@ -16,7 +16,7 @@ namespace Alphavantage
         
 
 
-        public static async Task<double> GetRsiAsync(string symbol1, string interval1, string period1)
+        public static async Task<string> GetRsiAsync(string symbol1, string interval1, string period1)
         {
             //API KEY FROM alphavantage.co
             string API_KEY = "60GJ3J79HQJLF9HC";
@@ -30,7 +30,7 @@ namespace Alphavantage
 
             var machine = JsonConvert.DeserializeObject<AlphavantageData>(response);
             var _RSI = machine.TechnicalAnalysisRsi.Last().Value.Rsi;
-            return _RSI;
+            return Math.Round(_RSI, 2).ToString();
         }
 
     }
