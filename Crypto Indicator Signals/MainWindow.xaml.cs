@@ -23,6 +23,9 @@ namespace Crypto_Indicator_Signals
         public MainWindow()
         {
             InitializeComponent();
+            //BTC_RSI.Background = Brushes.Black;
+            
+
         }
     }
 }
