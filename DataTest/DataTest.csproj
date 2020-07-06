@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Crypto Indicator Signals\Crypto Indicator Signals.csproj">
-      <Project>{a7476ec9-58d1-45fb-81d6-defac42ef7a5}</Project>
-      <Name>Crypto Indicator Signals</Name>
+    <ProjectReference Include="..\Alphavantage\Alphavantage.csproj">
+      <Project>{d735b5b0-8061-4522-9ec0-48dffd175b56}</Project>
+      <Name>Alphavantage</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

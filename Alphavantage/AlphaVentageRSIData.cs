@@ -47,7 +47,7 @@ namespace Alphavantage
     public partial class TechnicalAnalysisRsi
     {
         [JsonProperty("RSI")]
-        public string Rsi { get; set; }
+        public double Rsi { get; set; }
     }
 
     public partial class AlphavantageData
