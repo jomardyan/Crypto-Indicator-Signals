@@ -605,6 +605,7 @@
                 </Grid>
             </materialDesign:Card>
         </StackPanel>
+        <Button Content="refresh" Grid.Column="6" HorizontalAlignment="Left" Margin="65,49,0,0" Grid.Row="5" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
         <!--#endregion-->
     </Grid>
 </Window>

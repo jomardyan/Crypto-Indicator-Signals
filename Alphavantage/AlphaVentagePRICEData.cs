@@ -1,14 +1,8 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace Alphavantage
+namespace Markets
 {
-
-
     public partial class AlphaVentagePRICEData
     {
         [JsonProperty("Realtime Currency Exchange Rate")]
@@ -45,5 +39,3 @@ namespace Alphavantage
         public string The9AskPrice { get; set; }
     }
 }
-
-

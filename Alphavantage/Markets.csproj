@@ -7,8 +7,8 @@
     <ProjectGuid>{D735B5B0-8061-4522-9EC0-48DFFD175B56}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Alphavantage</RootNamespace>
-    <AssemblyName>Alphavantage</AssemblyName>
+    <RootNamespace>Markets</RootNamespace>
+    <AssemblyName>Markets</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -47,13 +48,25 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AlphaVentagePRICEData.cs" />
-    <Compile Include="Price.cs" />
-    <Compile Include="RSI.cs" />
+    <Compile Include="CoinBase.cs" />
+    <Compile Include="CoinMarketCap.cs" />
+    <Compile Include="AlphaPRICE.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="AlphaRSI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="AlphaVentageRSIData.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

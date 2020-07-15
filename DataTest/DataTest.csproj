@@ -50,9 +50,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Alphavantage\Alphavantage.csproj">
+    <ProjectReference Include="..\Alphavantage\Markets.csproj">
       <Project>{d735b5b0-8061-4522-9ec0-48dffd175b56}</Project>
-      <Name>Alphavantage</Name>
+      <Name>Markets</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

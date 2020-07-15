@@ -1,15 +1,12 @@
 ﻿using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Alphavantage
+namespace Markets
 {
-    public static class Price
+    public static class AlphaPRICE
     {
         /// <summary>
         /// Get Exchnage Data
@@ -22,10 +19,9 @@ namespace Alphavantage
             StringBuilder urlBuilder = new StringBuilder($"https://www.alphavantage.co/");
             urlBuilder.Append($"query?function=CURRENCY_EXCHANGE_RATE&from_currency={FromCurrency}&to_currency={ToCurrency}&apikey={API_KEY}");
 
-
             HttpClient client = new HttpClient();
-            System.TimeSpan timeSpan = new TimeSpan(0,0, 60);
-            client.Timeout = timeSpan; 
+            System.TimeSpan timeSpan = new TimeSpan(0, 0, 60);
+            client.Timeout = timeSpan;
             var response = await client.GetStringAsync(urlBuilder.ToString());
             var data = JsonConvert.DeserializeObject<AlphaVentagePRICEData>(response);
             var _PRICE = data.RealtimeCurrencyExchangeRate.The5ExchangeRate;
